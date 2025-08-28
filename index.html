@@ -11,6 +11,60 @@
     <title>Newsletter Sign-Up Form</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <main>
+      <section class="signup">
+        <picture>
+          <source
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 75rem)"
+          />
+          <source
+            srcset="./assets/images/illustration-sign-up-tablet.svg"
+            media="(min-width: 48rem)"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            aria-hidden="true"
+            class="card-img"
+          />
+        </picture>
+        <div class="form-content">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form id="sign-up-form" novalidate>
+            <label for="email" class="email-label">Email address</label>
+            <span class="error-label" id="error-msg" role="alert"></span>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+              aria-describedby="error-msg"
+            />
+            <button type="submit" id="subscribe-btn" class="subscribe-btn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="success hidden" aria-live="polite">
+        <img
+          src="./assets/images/icon-success.svg"
+          alt="check mark"
+          class="check-mark"
+        />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to ash@loremcompany.com. Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+        <button type="button" id="dismiss">Dismiss message</button>
+      </section>
+    </main>
   </body>
 </html>
