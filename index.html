@@ -8,10 +8,17 @@
       href="./assets/images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Newsletter Sign-Up Form</title>
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <main>
+    <main class="container">
       <section class="signup">
         <picture>
           <source
@@ -44,6 +51,7 @@
               name="email"
               id="email"
               placeholder="email@company.com"
+              autocomplete="email"
               aria-describedby="error-msg"
             />
             <button type="submit" id="subscribe-btn" class="subscribe-btn">
@@ -60,8 +68,9 @@
         />
         <h1>Thanks for subscribing!</h1>
         <p>
-          A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription.
+          A confirmation email has been sent to
+          <strong id="user-email">ash@loremcompany.com.</strong> Please open it
+          and click the button inside to confirm your subscription.
         </p>
         <button type="button" id="dismiss">Dismiss message</button>
       </section>

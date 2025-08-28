@@ -1,0 +1,27 @@
+:root {
+  /* colors */
+  --white: #ffffff;
+  --grey: #949494;
+  --blue-800: #242742;
+  --blue-700: #36384d;
+  --red: #ff6155;
+  --gradient-1: #ff6a3a;
+  --gradient-2: #ff527b;
+
+  /* Typography Presets */
+  --font-family-base: "Roboto", system-ui, sans-serif;
+  --text-preset-1-font-size: 2.5rem;
+  --text-preset-1-tablet-font-size: 3.5rem;
+  --text-preset-1-font-weight: 700;
+  --text-preset-1-line-height: 1;
+  --text-preset-1-letter-spacing: 0;
+  --text-preset-2-font-size: 1rem;
+  --text-preset-2-font-weight: 400;
+  --text-preset-2-btn-font-weight: 700;
+  --text-preset-2-line-height: 1.5;
+  --text-preset-2-letter-spacing: 0;
+  --text-preset-3-font-size: 0.75rem;
+  --text-preset-3-font-weight: 700;
+  --text-preset-3-line-height: 1.5;
+  --text-preset-3-letter-spacing: 0;
+}
