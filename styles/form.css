@@ -1,7 +1,3 @@
-.hidden {
-  display: none !important;
-}
-
 .signup {
   display: flex;
   flex-direction: column;
@@ -63,6 +59,22 @@
   margin-top: 0.5rem;
 }
 
+.email-error {
+  color: var(--red) !important;
+  border-color: var(--red) !important;
+  background-color: #ff605557 !important;
+}
+
+.email-normal {
+  color: #242742 !important;
+  border-color: #949494 !important;
+  background-color: #ffffff !important;
+}
+
+#error-msg {
+  color: #ff6155;
+}
+
 .btn {
   margin-top: 1.5rem;
   padding: 1rem;
@@ -107,6 +119,10 @@
 #dismiss-btn {
   width: 100%;
   margin-top: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 48rem) {
