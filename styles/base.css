@@ -4,5 +4,5 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: var(--font-family-base);
-  background-color: var(--blue-700);
+  background-color: var(--white);
 }

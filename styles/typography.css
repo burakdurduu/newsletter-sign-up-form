@@ -28,3 +28,9 @@ button {
   line-height: var(--text-preset-3-line-height);
   letter-spacing: var(--text-preset-3-letter-spacing);
 }
+
+@media (min-width: 48rem) {
+  h1 {
+    font-size: var(--text-preset-1-tablet-font-size);
+  }
+}
