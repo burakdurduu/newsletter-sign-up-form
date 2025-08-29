@@ -24,11 +24,15 @@ function resetEmailStyles() {
 
 subscribeBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  const isValid = checkEmail(emailInput.value);
+  const email = emailInput.value;
+  const isValid = checkEmail(email);
 
   if (isValid) {
     signupSection.classList.add("hidden");
     successSection.classList.remove("hidden");
+
+    const userEmail = document.getElementById("user-email");
+    userEmail.textContent = email;
   } else {
     errorLabel.textContent = "Valid email required";
     emailInput.classList.add("email-error");
