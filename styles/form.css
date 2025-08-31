@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  max-width: max-content;
+  max-width: 100%;
 }
 
 .card-img {
@@ -134,7 +134,7 @@
   .signup {
     border-radius: 2.25rem;
     padding: 2.5rem;
-    box-shadow: 4px 8px 20px rgba(rgba(0, 0, 0, 0.644));
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.644);
   }
 
   .form-content {
@@ -154,5 +154,11 @@
     flex-direction: row-reverse;
     gap: 4rem;
     padding: 1.5rem 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
   }
 }
